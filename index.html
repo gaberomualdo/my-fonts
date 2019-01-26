@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>FredType: Fonts I've Built</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
 	<div class="container">
 		<h1>FredType</h1>
 		<p>A few fonts I've built.</p>
-		
+		<ul class="fonts">
+			
+		</ul>
+		<footer>
+			<p>Built by <a href="https://xtrp.github.io/">xtrp</a></p>
+			<p>&copy; 2018</p>
+		</footer>
 	</div>
+	<script src="data.js"></script>
+	<script>
+	
+	fonts.forEach(function(font){
+		document.querySelector("div.container ul.fonts").innerHTML += `
+		<li>
+			<h1>${font.name}</h1>
+			<img src="img/${font.image}">
+			<a href='fonts/${font.file}' download='${font.name}.ttf'>Download</a>
+		</li>
+		`;
+	})
+
+	</script>
 </body>
 </html>

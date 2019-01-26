@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Noto Sans", sans-serif;
+}
+
+body {
+	text-align: center;
+	color: #222;
+}
+div.container {
+	display: inline-block;
+	text-align: left;
+	width: 700px;
+	box-sizing: border-box;
+	padding: 3rem 1rem;
+}
+@media only screen and (max-width: 700px) {
+	div.container {
+		width: 100%;
+		padding: 2rem 1rem;
+	}
+}
+div.container > h1 {
+	font-size: 3rem;
+	text-align: center;
+	font-weight: 900;
+}
+div.container > p {
+	font-size: 1.25rem;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 0.75rem;
+	margin-bottom: 1.75rem;
+}
+div.container ul {
+	display: block;
+	overflow: auto;
+	border-bottom: 1px solid #ccc;
+}
+div.container ul li {
+	display: block;
+	border-top: 1px solid #ccc;
+	clear: both;
+	width: 100%;
+	float: left;
+	overflow: auto;
+	padding: 1.75rem 0;
+}
+div.container ul li > h1 {
+	margin-bottom: 1.25rem;
+	line-height: 1;
+}
+div.container ul li > img {
+	max-width: 100%;
+	margin-bottom: 1.25rem;
+}
+div.container ul li > a {
+	font-size: 0.875rem;
+	line-height: 1;
+	display: block;
+	float: left;
+	clear: both;
+	text-decoration: none;
+	background-color: #dedede;
+	color: inherit;
+	padding: 0.75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.075rem;
+	cursor: pointer;
+}
+div.container ul li > a:hover {
+	background-color: #ccc;
+}
+footer {
+	text-align: center;
+	padding: 1.75rem 0;
+	line-height: 2;
+	font-size: 1.125rem;
+}
+footer a {
+	color: #27f;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+	color: #23f;
+}
